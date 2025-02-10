@@ -1,0 +1,266 @@
+/* Base styles (default: mobile first) */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive container */
+html {
+  width: 90%; /* Take most of the screen on small devices */
+  margin: auto;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Button styles */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: blue;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+}
+#vendor_icon{
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  align-items: center;
+  justify-items: center;
+}
+
+/* 📌 Desktop Screens (Larger than 768px) */
+@media screen and (min-width: 768px) {
+  html,form {
+    width: auto; /* Limit width for better readability */
+  }
+
+  body,header,form {
+    font-size: 18px;
+  }
+}
+
+/* 📌 Landscape Phones (More than 480px) */
+@media screen and (min-width: 480px) {
+  .button{
+    padding: 15px 30px; /* Bigger buttons */
+  }
+}
+
+/* 📌 Large Screens (More than 1024px) */
+@media screen and (min-width: 1024px) {
+  html ,form{
+    width: 100%;
+  }
+}
+/* General Styles */
+body {
+  font-family: 'Georgia', serif;
+  color: #3e3e3e;
+  background-color: rgb(190, 115, 3);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+.fc{
+  text-align: left;
+}
+#fch{
+  color: rgb(40, 109, 38);
+  font-family:omic Sans MS, Comic Sans, cursive;
+  font-weight: 900;
+}
+header {
+  background-image: url(image/back.jpg);
+  color: #0ff;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family:  sans-serif ,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #5007d6;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #4315e9;
+}
+
+main {
+  text-align: center;
+  justify-items: center;
+  padding: 20px;
+  min-height: 80vh;
+}
+
+/* Section Styles */
+.section {
+  display: none;
+  padding: 20px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  color: #c00dc0;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Active Section */
+.section.active {
+  display: block;
+}
+
+/* Specific Section Backgrounds */
+#home {
+  font-size: 28px; /* Add your Home page image */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(255, 255, 255);
+  outline-color: #000;
+  outline-width: 2px;
+  text-shadow: #0ff;
+}
+
+#about {
+  background-image: url('about-background.jpg'); /* Add your About page image */
+  font-size: 28px; /* Add your Home page image */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(255, 255, 255);
+  outline-color: #000;
+  outline-width: 2px;
+  text-shadow: #0ff;
+}
+
+#address {
+  background-image: url('address-background.jpg'); 
+  font-size: 28px; /* Add your Home page image */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(255, 255, 255);
+  outline-color: #000;
+  outline-width: 2px;
+  text-shadow: #0ff;/* Add your Address page image */
+}
+a{
+  color: #ccc;
+  border: #0ff;
+}
+#contact {
+  font-size: 28px; /* Add your Home page image */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(255, 255, 255);
+  outline-color: #000;
+  outline-width: 2px;
+  text-shadow: #0ff;
+  background-image: url('contact-background.jpg'); /* Add your Contact page image */
+}
+
+/* Gallery Styles (For Home Section) */
+.furniture-gallery {
+  text-align: center;
+  margin: 20px auto;
+  color: #c60dff;
+  text-shadow: 1px 1px 2px #000;
+}
+#icon{
+  height: 40px;
+  width: 40px;
+}
+
+.gallery-item {
+  display: inline-block;
+  margin: 15px;
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 600px;
+  height: 500px;
+  object-fit: cover;
+  border: 2px solid #0d85bd;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+/* Form and Contact Section Styles */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+textarea,
+button {
+  width: 150%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+}
+
+button {
+  background-color: rgba(255, 20, 224, 0.253);
+  color: #0ff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s rgb(3, 3, 68);
+  font-size: 24px;
+}
+
+button:hover {
+  background-color: #8c6b3f;
+}
+
+.social-links a {
+  color: #8a18be;
+  text-decoration: none;
+  margin: 5px 0;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #000;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ffd700;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #0d0c64;
+  color: #0ff;
+}
+
+/* Keyframes for Fade-In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.3;
+  }
+}
